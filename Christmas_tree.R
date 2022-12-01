@@ -12,3 +12,13 @@ for (k in seq_len(3)) {
     cat('\n')
   }
 }
+
+arvore <- function() {
+  for (i in seq_len(3)) {
+    for (j in 1:(10 + i*3)) {
+      cat(rep(' ', (19) - j), rep(emoji, j), '\n', sep = '')
+    }
+  }
+}
+
+arvore()
